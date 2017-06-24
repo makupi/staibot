@@ -15,7 +15,7 @@ Written for Staiain's rhythm games server (https://twitch.tv/staiain), but would
 If you choose to use a different distribution, make sure you can get python3.6 working, as well as pip.
 - A working instance of MongoDB.
 - discord.py, asyncio and pymongo libraries (`pip3 install discord.py asyncio pymongo` should do the trick)
-- A Discord app - you'll need the client token to allow the bot to talk to Discord's API
+- A Discord app - you'll need the client token to allow the bot to talk to Discord's API. You can create one here: https://discordapp.com/developers/applications/me
 - The bot should have a role that allows it to read and send messages, and manage roles. Additional roles are not needed and may present  a security risk.
 
 ### Installation on Ubuntu >= 16.10
@@ -25,7 +25,9 @@ If you choose to use a different distribution, make sure you can get python3.6 w
 3. Install these packages:  
 `sudo apt install python3.6 python3-pip mongodb-org`  
 4. Install the dependencies from pip as outlined in the requirements section of this readme.
-5. Run the bot using `python3.6 bot.py`.
+5. At the bottom of bot.py, add the following line, where <YOUR CLIENT TOKEN> is the token you obtained earlier from Discord:  
+`client.run("<YOUR CLIENT TOKEN>")`
+6. Run the bot using `python3.6 bot.py`.
 
 ### Known issues:
 None. No code is perfect, so if you find any, feel free to open an issue.
