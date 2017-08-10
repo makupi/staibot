@@ -2,6 +2,8 @@
 A simple Discord bot to allow users to auto-assign themselves roles. Useful for role-based access control to certain areas of a server.
 Written for Staiain's rhythm game community server (https://twitch.tv/staiain), but would work elsewhere.
 
+Note that this is a relatively early version of the bot, and regular updates will occur.
+
 ### Current features
 - Allows users to self-assign roles in a server. This is useful if users want to enrol themselves into certain groups, etc.
 - Allows users to enable a "notification role", which allows them to be mentioned if an administrator sees fit (`!notify`).
@@ -11,6 +13,7 @@ Written for Staiain's rhythm game community server (https://twitch.tv/staiain), 
 - Add a rule system for specified roles, so a user would have to read and acknowledge a set of rules before the bot assigns them their role.
 - Create a configuration file, so that the bot can be more easily tailored to specific setups and requirements
 - Implement a plugin system for developers to extend the bot's functionality
+- If the bot ends up storing data about users, then implement a ToS message for the server admin to accept
 
 ### Requirements
 - Python 3.6 or later (can be obtained on Ubuntu >= 16.10 by installing the `python3.6` package.)  
